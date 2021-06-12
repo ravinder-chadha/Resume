@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.google.com/specimen/Poppins?query=popp');
+@import url('https://fonts.google.com/specimen/Mate+SC');
+*{
+  user-select: none;
+}
+body {
+  margin: 0;
+  background-color: #242121;
+  color: #F8F3E3;
+  font-size: 17px;
+  line-height: 1.8em;
+}
+
+a{  
+  text-shadow: 1px 1px 1px white;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+  animation-play-state: paused;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  font-family: 'Mate SC';
+}
+
+header {
+  padding: 2em;
+  text-align: right;
+  background-image: url('./img/latest2.0bg.jpg');
+  background-size:cover;
+  background-position: fixed;
+  color: #F8F3E3;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 1300px;
+  font-family: 'Raleway';
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Mate SC';
+  margin: 1em 0;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  color: #FFDF01;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+h4{
+  color: #00FFFF;
+  font-family: 'Mate SC';
+}
+
+main {
+  max-width: 1140px;
+  font-family: 'poppins';
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+.fas{
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+
+.achievement, .skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.achievement .prize {
+  color: #FF2047;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.achievement .description {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.achievement .description p {
+  padding-left: 1em;
+}
+
+.skills .column1 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skills .column1 ul, ul.project-description {
+  list-style-type: none;
+}
+
+.skills .column1 ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #663a82;
+}
+.skills .column1 ul > li:hover {
+  content: "►";
+  padding-right: 0.5em;
+  color: #FFDF01;
+  text-emphasis-color: #00FF00;
+}
+.skills .column2 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skills .column2 ul, ul.project-description {
+  list-style-type: none;
+}
+
+.skills .column2 ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #663a82;
+}
+.skills .column2 ul > li:hover {
+  content: "►";
+  padding-right: 0.5em;
+  color: #FFDF01;
+  text-emphasis-color: #00FF00;
+}
+
+.school, .project-title {
+  text-transform: capitalize;
+}
+
+.school span, .project-title span {
+  color: #FFDF01;
+}
+
+ul.project-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #FFDF01;
+}
+.project-title f{
+  color: royalblue;
+}
+.project-title{
+  color: #FFDF01;
+  font-family: Arial, Helvetica, sans-serif;
+  size: 30px;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: #696969;
+ color: white;
+ text-align: right;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .achievement {
+    display: block;
+  }
+
+  .achievement .prize, .achievement .description {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column1 {
+    max-width: 50%;
+  }
+  .skills .column2 {
+    max-width: 50%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+/* @keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+} */
+@keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     transform: translateY(50px);
+  }
+  /* 50%{
+    opacity: 0;
+    transform:translateY(100px);
+  } */
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(20deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(740deg);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skills-animation {
+      animation: fadeInUp 3s 1;
+  }
+  .project-description-animation{
+    animation: fadeInLeft 3s 1;
+  }
+  .fab-animation{
+    animation: fadeInLeft 3s 1;
+  }
+  .column1-animation{
+    animation: fadeInUp 1.5s 1, fadeInLeft 3s 1;
+  }
+  .column2-animation{
+    animation:  fadeInUp 1.5s 1, fadeInRight 3s 1;
+  }
+  .fab-animation{
+    animation: spin 2s 1;
+  }
+  .fas-animation{
+    animation: spin 2s 1;
+  }
+}
+
+
+/* Animation
+.header .section .p .q {
+  animation: animated-text 4s linear 1s 1 normal both,
+             animated-cursor 600ms linear infinite;
+}
+
+/* text animation */
+
+/* @keyframes animated-text{
+  from{width: 0;}
+  to{width: 456px;}
+} */
+
+/* cursor animations */
+
+/* @keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}  */

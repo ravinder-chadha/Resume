@@ -39,7 +39,7 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: right;
-  background-image: url('./img/latest2.0bg.jpg');
+  background-image: url('https://user-images.githubusercontent.com/78102600/123315675-9ab7d580-d549-11eb-81ad-1c8270e1ea00.jpg');
   background-size:cover;
   background-position: fixed;
   color: #F8F3E3;

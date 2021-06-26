@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.google.com/specimen/Poppins?query=popp');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.google.com/specimen/Mate+SC');
 *{
   user-select: none;
@@ -10,6 +11,7 @@ body {
   color: #F8F3E3;
   font-size: 17px;
   line-height: 1.8em;
+  font-family: 'Poppins';
 }
 
 a{  
@@ -33,7 +35,7 @@ section{
 
 header, main, footer {
   margin: 0 auto;
-  font-family: 'Mate SC';
+  /* font-family: 'Mate SC'; */
 }
 
 header {
@@ -48,7 +50,7 @@ header {
 header section {
   margin: 0 auto;
   max-width: 1300px;
-  font-family: 'Raleway';
+  /* font-family: 'Raleway'; */
 }
 
 header img {
@@ -58,7 +60,7 @@ header img {
 
 h1 {
   text-transform: uppercase;
-  font-family: 'Mate SC';
+  /* font-family: 'Mate SC'; */
   margin: 1em 0;
   font-size: 3.5rem;
   line-height: 3.5rem;
@@ -66,21 +68,18 @@ h1 {
 
 h3 {
   text-transform: uppercase;
-  font-family: 'Raleway';
+  /* font-family: 'Raleway'; */
   color: #FFDF01;
 }
 
-h3, h4 {
-  font-weight: bold;
-}
 h4{
   color: #00FFFF;
-  font-family: 'Mate SC';
+  /* font-family: 'Mate SC'; */
 }
 
 main {
   max-width: 1140px;
-  font-family: 'poppins';
+  /* font-family: 'poppins'; */
 }
 
 main section:not(:last-child) {
@@ -96,6 +95,7 @@ main section:not(:last-child) {
   line-height: 1.5em;
   margin: 5px;
   text-align: center;
+  animation: bounce 2s 1;
 }
 .fas{
   border: 1px solid white;
@@ -106,6 +106,7 @@ main section:not(:last-child) {
   line-height: 1.5em;
   margin: 5px;
   text-align: center;
+  animation: bounce 2s 1;
 }
 
 
@@ -194,7 +195,7 @@ ul.project-description li:before{
 }
 .project-title{
   color: #FFDF01;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   size: 30px;
 }
 
@@ -244,7 +245,7 @@ footer {
 @keyframes fadeInUp {
   0% {
      opacity: 0;
-     transform: translateY(50px);
+     transform: translateY(30px);
   }
   /* 50%{
     opacity: 0;
@@ -255,12 +256,15 @@ footer {
      transform: translateY(0);
   }
 }
-@keyframes spin {
+@keyframes bounce {
   0% {
-    transform: rotateX(0deg) rotateY(20deg);
+    transform: translate(0px,30px);
+  }
+  50%{
+    transform: translate(0px, -5px);
   }
   100% {
-    transform: rotateX(0deg) rotateY(740deg);
+    transform: translate(0px,0px);
   }
 }
 @keyframes fadeInLeft {
@@ -276,7 +280,7 @@ footer {
 @keyframes fadeInRight {
   0% {
      opacity: 0;
-     transform: translateX(100px);
+     transform: translateX(50px);
   }
   100% {
      opacity: 1;
@@ -289,25 +293,19 @@ footer {
 }
 @media (prefers-reduced-motion: no-preference) {
   .skills-animation {
-      animation: fadeInUp 3s 1;
+      animation: fadeInUp 4s 1;
   }
   .project-description-animation{
     animation: fadeInLeft 3s 1;
   }
-  .fab-animation{
-    animation: fadeInLeft 3s 1;
-  }
+  /* .fab-animation{
+    animation: fadeInLeft 3ms 1;
+  } */
   .column1-animation{
     animation: fadeInUp 1.5s 1, fadeInLeft 3s 1;
   }
   .column2-animation{
     animation:  fadeInUp 1.5s 1, fadeInRight 3s 1;
-  }
-  .fab-animation{
-    animation: spin 2s 1;
-  }
-  .fas-animation{
-    animation: spin 2s 1;
   }
 }
 

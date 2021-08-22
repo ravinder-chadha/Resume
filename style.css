@@ -7,8 +7,8 @@
 }
 body {
   margin: 0;
-  background-color: #242121;
-  color: #F8F3E3;
+  background-color: #011627;
+  color: #FDFFFC;
   font-size: 17px;
   line-height: 1.8em;
   font-family: 'Poppins';
@@ -44,7 +44,7 @@ header {
   background-image: url('https://user-images.githubusercontent.com/78102600/123315675-9ab7d580-d549-11eb-81ad-1c8270e1ea00.jpg');
   background-size:cover;
   background-position: fixed;
-  color: #F8F3E3;
+  color: #F5F3F4;
 }
 
 header section {
@@ -69,11 +69,11 @@ h1 {
 h3 {
   text-transform: uppercase;
   /* font-family: 'Raleway'; */
-  color: #FFDF01;
+  color: #FF9F1C;
 }
 
 h4{
-  color: #00FFFF;
+  color: #2EC4B6;
   /* font-family: 'Mate SC'; */
 }
 
@@ -147,12 +147,12 @@ main section:not(:last-child) {
 .skills .column1 ul > li:before {
   content: "►";
   padding-right: 0.5em;
-  color: #663a82;
+  color: #E71D36;
 }
 .skills .column1 ul > li:hover {
   content: "►";
   padding-right: 0.5em;
-  color: #FFDF01;
+  color: #2EC4B6;
   text-emphasis-color: #00FF00;
 }
 .skills .column2 {
@@ -168,12 +168,12 @@ main section:not(:last-child) {
 .skills .column2 ul > li:before {
   content: "►";
   padding-right: 0.5em;
-  color: #663a82;
+  color: #E71D36;
 }
 .skills .column2 ul > li:hover {
   content: "►";
   padding-right: 0.5em;
-  color: #FFDF01;
+  color: #2EC4B6;
   text-emphasis-color: #00FF00;
 }
 
@@ -182,26 +182,26 @@ main section:not(:last-child) {
 }
 
 .school span, .project-title span {
-  color: #FFDF01;
+  color: #2EC4B6;
 }
 
 ul.project-description li:before{
   content: "✔";
   padding-right: 0.5em;
-  color: #FFDF01;
+  color: #E71D36;
 }
 .project-title f{
-  color: royalblue;
+  color: 2EC4B6;
 }
 .project-title{
-  color: #FFDF01;
+  color: #2EC4B6;
   /* font-family: Arial, Helvetica, sans-serif; */
   size: 30px;
 }
 
 footer {
  padding: 1em 1.5em;
- background: #696969;
+ background: #E71D36;
  color: white;
  text-align: right;
 }
